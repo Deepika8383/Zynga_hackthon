@@ -53,11 +53,8 @@ Design a system that can:
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/your-username/Zynga_hackthon.git
-cd Zynga_hackthon
+project: Zynga Hackathon Setup Guide
 
-'''
 folders:
   - backend
   - frontend/zynga_frontend
@@ -67,64 +64,107 @@ folders:
 setup:
   frontend:
     path: frontend/zynga_frontend
-    install_command: npm install
-    start_command: npm run dev
+    install_command: |
+      ```bash
+      cd frontend/zynga_frontend
+      npm install
+      ```
+    start_command: |
+      ```bash
+      npm run dev
+      ```
     port: 5173
+
   backend:
     path: backend
-    install_command: npm install
-    start_command: npx nodemon server.js
+    install_command: |
+      ```bash
+      cd backend
+      npm install
+      ```
+    start_command: |
+      ```bash
+      npx nodemon server.js
+      ```
     port: 4000
+
   python_backend:
     path: python_backend
-    install_command: pip install -r requirements.txt
-    start_command: python app.py
+    install_command: |
+      ```bash
+      cd python_backend
+      pip install -r requirements.txt
+      ```
+    start_command: |
+      ```bash
+      python app.py
+      ```
     port: 5000
 
 execution:
   steps:
     - description: Clone the repository
-      command: git clone https://github.com/Deepika8383/Zynga_hackthongit
+      command: |
+        ```bash
+        git clone https://github.com/Deepika8383/Zynga_hackthon.git
+        cd Zynga_hackthon
+        ```
     - description: Install frontend dependencies
       command: |
+        ```bash
         cd frontend/zynga_frontend
         npm install
+        ```
     - description: Install backend dependencies
       command: |
+        ```bash
         cd backend
         npm install
+        ```
     - description: Install Python backend dependencies
       command: |
+        ```bash
         cd python_backend
         pip install -r requirements.txt
+        ```
     - description: Start frontend
       command: |
+        ```bash
         cd frontend/zynga_frontend
         npm run dev
+        ```
     - description: Start backend
       command: |
+        ```bash
         cd backend
         npx nodemon server.js
+        ```
     - description: Start Python backend
       command: |
+        ```bash
         cd python_backend
         python app.py
+        ```
 
 access:
   url: http://localhost:5173
   description: Access the app in your browser after all three servers are running.
 
-
 troubleshooting:
-  - tip: Ensure ports 5173, 5000, and 4000 are available.
-  - tip: Make sure C++ build Tools is installed and in PATH.
-  - tip: Use virtualenv if pip install fails:
+  - tip: Ensure ports 5173, 4000, and 5000 are available.
+  - tip: Make sure C++ build tools are installed and available in PATH.
+  - tip: If pip install fails, use virtualenv:
       command: |
+        ```bash
         python -m venv venv
-        source venv/bin/activate  # Windows: venv\Scripts\activate
+        # Activate on macOS/Linux:
+        source venv/bin/activate
+        # Or on Windows:
+        venv\Scripts\activate
         pip install -r requirements.txt
+        ```
 
 notes:
   - This is a proof-of-concept. Do not use with real personal data.
   - No UIDAI or real government APIs are involved.
-  - Use only simulated/fake Aadhar cards for testing.
+  - Use only simulated/fake Aadhaar cards for testing purposes.
