@@ -54,8 +54,8 @@ Design a system that can:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/your-username/Zynga_hackthon.git
+cd Zynga_hackthon
 
 folders:
   - backend
