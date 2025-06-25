@@ -114,16 +114,23 @@ access:
   description: Access the app in your browser after all three servers are running.
 
 
-assets:
-  screenshots:
-    - name: Home Page
-      path: ./screenshots/home.png
-    - name: Verification Page
-      path: ./screenshots/verify.png
-    - name: Result Page
-      path: ./screenshots/result.png
-  demo_video:
-    link: https://your-demo-video-link.com
+## 🖼 Screenshots
+
+### 🔹 Home Page
+![Home Page](./screenshots/home.png)
+
+### 🔹 Verification Page
+![Verification Page](./screenshots/verify.png)
+
+### 🔹 Result Page
+![Result Page](./screenshots/result.png)
+
+---
+
+## 🎥 Demo Video
+
+[Watch the Demo Video](https://your-demo-video-link.com)
+
 
 troubleshooting:
   - tip: Ensure ports 5173, 5000, and 4000 are available.
