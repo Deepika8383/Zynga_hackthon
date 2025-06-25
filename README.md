@@ -63,86 +63,79 @@ setup:
   frontend:
     path: frontend/zynga_frontend
     install_command: |
-      ```bash
+      bash
       cd frontend/zynga_frontend
       npm install
-      ```
     start_command: |
-      ```bash
+      bash
       npm run dev
-      ```
     port: 5173
 
   backend:
     path: backend
     install_command: |
-      ```bash
+      bash
       cd backend
       npm install
-      ```
     start_command: |
-      ```bash
+      bash
       npx nodemon server.js
-      ```
     port: 4000
 
   python_backend:
     path: python_backend
     install_command: |
-      ```bash
+      bash
       cd python_backend
       pip install -r requirements.txt
-      ```
     start_command: |
-      ```bash
+      bash
       python app.py
-      ```
     port: 5000
 
 execution:
   steps:
     - description: Clone the repository
       command: |
-        ```bash
+        bash
         git clone https://github.com/Deepika8383/Zynga_hackthon.git
         cd Zynga_hackthon
-        ```
+
     - description: Install frontend dependencies
       command: |
-        ```bash
+        bash
         cd frontend/zynga_frontend
         npm install
-        ```
+
     - description: Install backend dependencies
       command: |
-        ```bash
+        bash
         cd backend
         npm install
-        ```
+
     - description: Install Python backend dependencies
       command: |
-        ```bash
+        bash
         cd python_backend
         pip install -r requirements.txt
-        ```
+
     - description: Start frontend
       command: |
-        ```bash
+        bash
         cd frontend/zynga_frontend
         npm run dev
-        ```
+
     - description: Start backend
       command: |
-        ```bash
+        bash
         cd backend
         npx nodemon server.js
-        ```
+
     - description: Start Python backend
       command: |
-        ```bash
+        bash
         cd python_backend
         python app.py
-        ```
 
 access:
   url: http://localhost:5173
