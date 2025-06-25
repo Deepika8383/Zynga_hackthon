@@ -154,6 +154,23 @@ troubleshooting:
         venv\Scripts\activate
         pip install -r requirements.txt
         ```
+## 🖼 Screenshots
+
+### 🔹 Home Page
+![Home Page](./screenshots/home.png)
+
+### 🔹 Verification Page
+![Verification Page](./screenshots/verify.png)
+
+### 🔹 Result Page
+![Result Page](./screenshots/result.png)
+
+---
+
+## 🎥 Demo Video
+
+[Watch the Demo Video](https://your-demo-video-link.com)
+
 
 notes:
   - This is a proof-of-concept. Do not use with real personal data.
