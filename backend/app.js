@@ -14,6 +14,6 @@ app.get('/', (req, res) => {
   });
 app.use('/ocr', ocrRoutes);
 app.use('/face', faceRoutes);
-app.use('/quality', qualityRoute);
+// app.use('/quality', qualityRoute);
 
 module.exports = app;
