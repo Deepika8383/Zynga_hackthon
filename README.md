@@ -46,6 +46,7 @@ Design a system that can:
 - 🌐 Multi-language support for OCR 
 - 📊 Displays numerical verification score
 - 💬 Alerts for poor image quality or lighting conditions
+- Included an executable binary for ease of testing and execution
 
 ---
 
