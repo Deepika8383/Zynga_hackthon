@@ -142,6 +142,17 @@ access:
   url: http://localhost:5173
   description: Access the app in your browser after all three servers are running.
 
+  
+## 🚀 Binary Executables
+
+Pre-built binary/executable files are available for each component of the project:
+
+- **Frontend**: Production build available in `frontend/zynga_frontend/dist/` folder.
+- **Node.js Backend**: Binary file present as `backend/node-backend`.
+- **Python Backend**: Binary executable file present as `python_backend/app.exe`.
+
+No need to build from source — you can directly use these executables for quick testing and deployment.
+
 troubleshooting:
   - tip: Ensure ports 5173, 4000, and 5000 are available.
   - tip: Make sure C++ build tools are installed and available in PATH.
