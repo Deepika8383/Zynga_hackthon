@@ -21,7 +21,7 @@ Design a system that can:
 
 ## 🧱 Architecture Overview
 
-- **OCR**: Tesseract (via Python) for extracting DOB and text from Aadhar image.
+- **OCR**: Tesseract (via Node js) for extracting DOB and text from Aadhar image.
 - **Face Matching**: OpenCV  used to compare ID photo and selfie.
 - **Frontend**: React (located in `/frontend/zynga_frontend`) for document upload and selfie capture.
 - **Backend**: Node.js & Express (`/backend`) for API handling and result serving.
