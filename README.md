@@ -56,3 +56,85 @@ Design a system that can:
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+
+folders:
+  - backend
+  - frontend/zynga_frontend
+  - python_backend
+  - screenshots
+
+setup:
+  frontend:
+    path: frontend/zynga_frontend
+    install_command: npm install
+    start_command: npm run dev
+    port: 5173
+  backend:
+    path: backend
+    install_command: npm install
+    start_command: npx nodemon server.js
+    port: 4000
+  python_backend:
+    path: python_backend
+    install_command: pip install -r requirements.txt
+    start_command: python app.py
+    port: 5000
+
+execution:
+  steps:
+    - description: Clone the repository
+      command: git clone https://github.com/Deepika8383/Zynga_hackthongit
+    - description: Install frontend dependencies
+      command: |
+        cd frontend/zynga_frontend
+        npm install
+    - description: Install backend dependencies
+      command: |
+        cd backend
+        npm install
+    - description: Install Python backend dependencies
+      command: |
+        cd python_backend
+        pip install -r requirements.txt
+    - description: Start frontend
+      command: |
+        cd frontend/zynga_frontend
+        npm run dev
+    - description: Start backend
+      command: |
+        cd backend
+        npx nodemon server.js
+    - description: Start Python backend
+      command: |
+        cd python_backend
+        python app.py
+
+access:
+  url: http://localhost:5173
+  description: Access the app in your browser after all three servers are running.
+
+
+assets:
+  screenshots:
+    - name: Home Page
+      path: ./screenshots/home.png
+    - name: Verification Page
+      path: ./screenshots/verify.png
+    - name: Result Page
+      path: ./screenshots/result.png
+  demo_video:
+    link: https://your-demo-video-link.com
+
+troubleshooting:
+  - tip: Ensure ports 5173, 5000, and 4000 are available.
+  - tip: Make sure C++ build Tools is installed and in PATH.
+  - tip: Use virtualenv if pip install fails:
+      command: |
+        python -m venv venv
+        source venv/bin/activate  # Windows: venv\Scripts\activate
+        pip install -r requirements.txt
+
+notes:
+  - This is a proof-of-concept. Do not use with real personal data.
+  - No UIDAI or real government APIs are involved.
+  - Use only simulated/fake Aadhar cards for testing.
