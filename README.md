@@ -43,7 +43,7 @@ Design a system that can:
 
 ## 💡 Bonus Capabilities
 
-- 🌐 Multi-language support for OCR (future enhancement)
+- 🌐 Multi-language support for OCR 
 - 📊 Displays numerical verification score
 - 💬 Alerts for poor image quality or lighting conditions
 
