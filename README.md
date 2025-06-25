@@ -65,6 +65,7 @@ setup:
   frontend:
     path: frontend/zynga_frontend
     install_command: |
+    
       ```bash
       cd frontend/zynga_frontend
       npm install
@@ -105,12 +106,14 @@ execution:
   steps:
     - description: Clone the repository
       command: |
+      
         ```bash
         git clone https://github.com/Deepika8383/Zynga_hackthon.git
         cd Zynga_hackthon
         ```
     - description: Install frontend dependencies
       command: |
+      
         ```bash
         cd frontend/zynga_frontend
         npm install
