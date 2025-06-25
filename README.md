@@ -57,6 +57,7 @@ Design a system that can:
 git clone https://github.com/your-username/Zynga_hackthon.git
 cd Zynga_hackthon
 
+'''
 folders:
   - backend
   - frontend/zynga_frontend
@@ -112,24 +113,6 @@ execution:
 access:
   url: http://localhost:5173
   description: Access the app in your browser after all three servers are running.
-
-
-## 🖼 Screenshots
-
-### 🔹 Home Page
-![Home Page](./screenshots/home.png)
-
-### 🔹 Verification Page
-![Verification Page](./screenshots/verify.png)
-
-### 🔹 Result Page
-![Result Page](./screenshots/result.png)
-
----
-
-## 🎥 Demo Video
-
-[Watch the Demo Video](https://your-demo-video-link.com)
 
 
 troubleshooting:
