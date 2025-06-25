@@ -52,7 +52,7 @@ Design a system that can:
 
 ## 🛠 Setup Instructions
 
-project: Zynga Hackathon Setup Guide
+Project: Zynga Hackathon Setup Guide
 
 folders:
   - backend
