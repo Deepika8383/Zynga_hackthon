@@ -36,8 +36,8 @@ export default function Home() {
         <h3 className="text-xl font-semibold text-gray-700 mb-4">Made with ❤️ by</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {[
-            { name: 'Deepika', role: 'Frontend Developer' },
-            { name: 'Nishu', role: 'Backend Engineer' },
+            { name: 'Deepika', role: 'Backend Developer' },
+            { name: 'Nishu', role: 'Frontend Devloper' },
             { name: 'Shruti', role: 'UI/UX Designer' },
           ].map((member) => (
             <div
